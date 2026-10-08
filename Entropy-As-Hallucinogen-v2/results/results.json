@@ -1,0 +1,26 @@
+{
+  "note": "Numbers copied from the printed results of the tqa_multi.py run on Kaggle (T4), 790 questions.",
+  "random": 0.2229,
+  "old_flan_t5_baseline": 0.2557,
+  "models": {
+    "Qwen3-4B": {
+      "acc": {"original": 0.3848, "letter": 0.6544, "orders": 0.6810, "wordings": 0.7063, "longest": 0.3696, "shortest": 0.1759},
+      "coverage": {"confidence": {"1.0": 0.706, "0.8": 0.805, "0.6": 0.911, "0.4": 0.965, "0.2": 0.981},
+                   "token_entropy": {"1.0": 0.385, "0.8": 0.410, "0.6": 0.395, "0.4": 0.415, "0.2": 0.487}},
+      "auroc": {"confidence": 0.858, "token_entropy": 0.554}
+    },
+    "Qwen3-8B": {
+      "acc": {"original": 0.2835, "letter": 0.6646, "orders": 0.7013, "wordings": 0.7127, "longest": 0.3696, "shortest": 0.1759},
+      "coverage": {"confidence": {"1.0": 0.713, "0.8": 0.802, "0.6": 0.901, "0.4": 0.972, "0.2": 1.000},
+                   "token_entropy": {"1.0": 0.284, "0.8": 0.301, "0.6": 0.321, "0.4": 0.354, "0.2": 0.354}},
+      "auroc": {"confidence": 0.855, "token_entropy": 0.580}
+    }
+  },
+  "ensemble": {
+    "acc": 0.7316,
+    "coverage": {"confidence": {"1.0": 0.732, "0.8": 0.826, "0.6": 0.920, "0.4": 0.975, "0.2": 1.000},
+                 "disagreement": {"1.0": 0.732, "0.8": 0.782, "0.6": 0.857, "0.4": 0.943, "0.2": 1.000}},
+    "auroc": {"confidence": 0.858, "disagreement": 0.769}
+  },
+  "overlap": {"both_right": 0.629, "only_first": 0.077, "only_second": 0.084, "neither": 0.210, "same_wrong_share": 0.699}
+}

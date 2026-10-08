@@ -1,0 +1,11 @@
+# for tqa_multi.py
+torch
+transformers>=4.51
+accelerate
+bitsandbytes     # only needed for the 4-bit 8B model
+numpy
+scipy
+requests
+
+# extra/ also uses:
+# matplotlib, tqdm, sentencepiece, pandas
