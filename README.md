@@ -123,7 +123,7 @@ On Kaggle (GPU T4, internet on):
 ```
 !pip install -q "transformers>=4.51" accelerate bitsandbytes scipy
 ```
-Use this [kaggle link}(https://www.kaggle.com/code/blackoutcreed/entropy-as-hallucinogen-2) to run it directly
+Use this [kaggle link](https://www.kaggle.com/code/blackoutcreed/entropy-as-hallucinogen-2) to run it directly
 
 That takes about 40 minutes for both models, most of it the 8B. Set `LIMIT = 100` at the top of `tqa_multi.py` for a quick test first. To try other models, edit the `MODELS` list at the top. Scores are saved as it goes, so a stopped run picks up where it left off.
 
